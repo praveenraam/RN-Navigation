@@ -1,79 +1,81 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Navigation Example
 
-# Getting Started
+This project is a simple React Native application where I explored the basics of navigation in React and React Native using the React Navigation library. The focus is on understanding how to implement stack navigation in a React Native app.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## About the Project
 
-## Step 1: Start the Metro Server
+This project is an exercise in learning how to use React Navigation to handle navigation in a React Native application. I specifically focused on using the stack navigator to manage transitions between screens.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Prerequisites
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Before you begin, ensure you have the following installed on your local machine:
 
-```bash
-# using npm
-npm start
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- [React Native CLI](https://reactnative.dev/docs/environment-setup)
+- [Android Studio](https://developer.android.com/studio) or [Xcode](https://developer.apple.com/xcode/) for running the app on an emulator or physical device.
 
-# OR using Yarn
-yarn start
-```
+### Installation
 
-## Step 2: Start your Application
+1. Clone the repository:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+    ```bash
+    git clone https://github.com/praveenraam/RN-Navigation.git
+    ```
 
-### For Android
+2. Navigate to the project directory:
 
-```bash
-# using npm
-npm run android
+    ```bash
+    cd RN-Navigation
+    ```
 
-# OR using Yarn
-yarn android
-```
+3. Install the dependencies:
 
-### For iOS
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-```bash
-# using npm
-npm run ios
+4. Install the necessary React Navigation packages:
 
-# OR using Yarn
-yarn ios
-```
+    ```bash
+    npm install @react-navigation/native @react-navigation/stack
+    npm install react-native-screens react-native-safe-area-context
+    ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+5. For iOS, make sure to install the CocoaPods dependencies:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+    ```bash
+    cd ios
+    pod install
+    cd ..
+    ```
 
-## Step 3: Modifying your App
+### Running the App
 
-Now that you have successfully run the app, let's modify it.
+To start the application, use the following commands:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- For iOS:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+    ```bash
+    npx react-native run-ios
+    ```
 
-## Congratulations! :tada:
+- For Android:
 
-You've successfully run and modified your React Native App. :partying_face:
+    ```bash
+    npx react-native run-android
+    ```
 
-### Now what?
+## Usage
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Once the app is running, you can navigate between different screens using the stack navigator. The basic implementation includes a few screens demonstrating how to:
 
-# Troubleshooting
+- Navigate from one screen to another.
+- Pass parameters between screens.
+- Use the stack navigator to manage back actions.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Acknowledgments
+React Navigation Documentation - The official documentation for learning React Navigation.
+The React and React Native communities for their helpful resources and guides.
